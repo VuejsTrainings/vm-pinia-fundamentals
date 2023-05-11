@@ -4,13 +4,19 @@
 
     const store = useTodoListStore();
     const { todoList } = storeToRefs(store);
-    const { toggleCompleted } = store;
+    const { toggleCompleted, deleteItem } = store;
 </script>
 
 <template>
-    <div v-for="todo in todoList" :key="todo.id" :class="{completed: todo.completed}">
-        <span>{{ todo.item }}</span>
-        <span @click.stop="toggleCompleted(todo.id)">&#10004;</span>
+    <div v-for="todo in todoList" :key="todo.id" class="item">
+
+        <div class="content">
+            <span :class="{completed: todo.completed}">{{ todo.item }}</span>
+            <div>
+                <span @click.stop="toggleCompleted(todo.id)">&#10004;</span>
+                <span @click.stop="deleteItem(todo.id)" class="x">&#10060;</span>
+            </div>
+        </div>
     </div>
 </template>
 
