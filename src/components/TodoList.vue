@@ -21,7 +21,22 @@
 </template>
 
 <style scoped>
-     .completed{
-        text-decoration: line-through;
-     }
+span {
+  margin: 0 10px;
+  cursor: pointer;
+}
+.item {
+  display: flex;
+  justify-content: center;
+}
+.content {
+  display: flex;
+  font-size: 1.5em;
+  justify-content: space-between;
+  width: 80vw;
+  padding: 5px;
+}
+.completed {
+  text-decoration: line-through;
+}
 </style>
