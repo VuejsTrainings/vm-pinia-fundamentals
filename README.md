@@ -1,6 +1,6 @@
 # vm-pinia-fundamentals
 
-This template should help get you started developing with Vue 3 in Vite.
+Application du cours Pinia Fundamentals sur Vue Mastery.
 
 ## Recommended IDE Setup
 
