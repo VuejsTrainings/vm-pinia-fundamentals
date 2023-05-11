@@ -1,7 +1,6 @@
 import { defineStore } from "pinia";
 
 export const useTodoListStore = defineStore('TodoList', {
-    
     state: () => ({
         todoList: [],
         id: 0
@@ -14,5 +13,4 @@ export const useTodoListStore = defineStore('TodoList', {
             this.todoList = this.todoList.filter( item => item.id !== itemId )
         }
     }
-
 })
